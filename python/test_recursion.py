@@ -28,3 +28,20 @@ class Test_Palindrome:
     #     assert palindrome('Sore was I ere I saw Eros.') == True
     # def test_009(self):
     #     assert palindrome('A man, a plan, a canal -- Panama') == True
+
+class Test_Bottles:
+    def test_001(self):
+        assert recursion_challenge.bottles(99, 99) == "Great success!"
+
+class Test_Roman_Num:
+    def test_01_a_single_number(self):
+        assert recursion_challenge.roman_num(1, 0, "") == "I"
+
+    def test_02_multiple_entries(self):
+        assert recursion_challenge.roman_num(3, 0, "") == 'III'
+
+    def test_03_odd_numerals(self):
+        assert recursion_challenge.roman_num(4, 0, "") == 'IV'
+
+    def test_04_all_edge_cases(self):
+        assert recursion_challenge.roman_num(944, 0, "") == 'CMXLIV'
